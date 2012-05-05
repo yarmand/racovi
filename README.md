@@ -1,6 +1,6 @@
 # racovi
 
-racovi is here to register initialization code for your javascript which is executed only for the current controller and view.
+racovi is a gem to register initialization code for your javascript which is executed only for the current controller and view.
 
 I created that to easily deploy what is explain in [this blog post](http://blog.harakys.com/blog/2011/09/05/javascript-initializers-to-your-views-with-rails-3-dot-1-and-coffeescript/).
 
