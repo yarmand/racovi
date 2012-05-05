@@ -8,9 +8,9 @@ racovi is based on the javascript event stack [Hevents](https://github.com/yarma
 
 # Usage
 
-## Prepare you Rails template
+## Prepare your Rails layout
 
-Put the helper function ``init_view_js`` wherever you want in your templates, it will add a ``$(document).ready(…)`` section calling initializer code for the current controller and the current view.
+Put the helper function ``init_view_js`` wherever you want in your layouts, it will add a ``$(document).ready(…)`` section calling initializer code for the current controller and the current view.
 
 for example
 
@@ -18,6 +18,13 @@ for example
 	…
 	= init_view_js
 	…
+	
+## Prepare your application.js
+
+add these line to your ``app/assets/javascript/application.js``
+
+	//= require hevents
+	//= require racovi
 
 ## Register an initializer code
 
@@ -25,7 +32,7 @@ use ``register_init(names,fun)`` in your controller or view js files
 
 	/** assets/javascript/persons.js **/
 	…
-	register_init('persons', function(){
+	Racovi.register_init('persons', function(){
 	  console.log('hello from Person controller')
 	});
 	…
@@ -33,7 +40,7 @@ _
 
 	/** assets/javascript/persons.js.coffee **/
 	…
-	register_init 'persons', () ->
+	Racovi.register_init 'persons', () ->
 	  console.log('hello from Person controller')
 	…
 	
@@ -41,7 +48,7 @@ _
 
 	/** assets/javascript/persons.js.coffee **/
 	...
-	register_init ['persons_new','persons_edit'], () ->
+	Racovi.register_init ['persons_new','persons_edit'], () ->
 	  console.log('editing a Person')
 	…
 
@@ -50,14 +57,19 @@ If you have complex view GUI distributed on multiple sources files, independent 
 
 	/** assets/javascript/sidebar.js.coffee **/
 	…
-	register_init 'persons', () ->
+	Racovi.register_init 'persons', () ->
 		('#persons_menu').show()
 	…
 	/** assets/javascript/persons.js.coffee **/
 	...
-	register_init 'persons', () ->
+	Racovi.register_init 'persons', () ->
 	  console.log('hello from Person controller')
 	...
+
+# TODO
+
+* automatically add ``hevents`` and ``racovi`` in application.js
+* automatically add ``init_view_js`` to layouts
 	
 # Contributing to racovi
  
