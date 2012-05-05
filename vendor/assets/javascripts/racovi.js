@@ -1,6 +1,7 @@
 (function(){
-  window.Racovi = new Hevents();
+  var Racovi = Hevents.new();
   Racovi.register_init = function(names, fun) {
     Racovi.bind(names,fun);
   };
-}();
+  window.Racovi = Racovi
+})();
