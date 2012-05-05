@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "racovi"
   gem.homepage = "http://github.com/yarmand/racovi"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Call Javascript initialization functions for your Rail controllers and views}
+  gem.description = %Q{Use Hevents (https://github.com/yarmand/hevents) to create JS init function for Rails controllers and views. Provide helper to setup handlers in your Rails code}
   gem.email = "yann@harakys.com"
   gem.authors = ["yann ARMAND"]
   # dependencies defined in Gemfile
