@@ -6,6 +6,8 @@ I created that to easily deploy what is explain in [this blog post](http://blog.
 
 racovi is based on the javascript event stack [Hevents](https://github.com/yarmand/hevents).
 
+** Important Note ** : This is a early version of the gem and still need some manual installations in your Rails application. But javascript code works 
+
 # Usage
 
 ## Prepare your Rails layout
