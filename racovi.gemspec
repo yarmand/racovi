@@ -27,8 +27,10 @@ Gem::Specification.new do |s|
     "lib/racovi.rb",
     "lib/racovi/railtie.rb",
     "lib/racovi/view_helpers.rb",
+    "racovi.gemspec",
     "spec/racovi_spec.rb",
     "spec/spec_helper.rb",
+    "spec/support/fake_controller.rb",
     "vendor/assets/javascripts/hevents.js",
     "vendor/assets/javascripts/hevents.min.js",
     "vendor/assets/javascripts/racovi.js"
