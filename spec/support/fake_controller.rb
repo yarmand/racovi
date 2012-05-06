@@ -1,5 +1,9 @@
+require "action_pack"
+require "action_controller/railtie"
 
-class FakeController
+class FakeController < ActionController::Base
+  include ActionView::Helpers::JavaScriptHelper
+  include ActionView::Helpers::TagHelper
   include Racovi::ViewHelpers
  
   attr_accessor :controller,:controller_name, :action_name
