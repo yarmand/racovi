@@ -73,6 +73,8 @@ If you have complex view GUI distributed on multiple sources files, independent 
 
 * automatically add ``hevents`` and ``racovi`` in application.js
 * automatically add ``init_view_js`` to layouts
+* make optioneal usage of ``$document.ready(…)``
+* add generic helpers to init whatever event
 	
 # Contributing to racovi
  
