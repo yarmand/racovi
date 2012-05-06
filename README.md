@@ -1,4 +1,5 @@
 # racovi
+[![Build Status](https://secure.travis-ci.org/yarmand/racovi.png?branch=master)](http://travis-ci.org/yarmand/racovi)
 
 racovi is a gem to register initialization code for your javascript which is executed only for the current controller and view.
 
